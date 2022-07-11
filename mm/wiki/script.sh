@@ -1,0 +1,1 @@
+scp -i id_rsa -r /home/cotsom/Documents/vsfi/mm/wiki/ root@192.168.88.49:/root/webSite && ssh -i /home/cotsom/.ssh/id_rsa root@192.168.88.49 docker-compose -f /root/webSite/wiki/wiki_new/docker-compose.yml up -d

@@ -1,0 +1,2 @@
+ADMIN_USER=vsfi
+ADMIN_PASSWORD=vsfi

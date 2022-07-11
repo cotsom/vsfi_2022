@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+    website:
+        build:
+        context: ./
+        ports:
+        - "8080:80"
+
+    openvpn:
+        cap_add:
+        - NET_ADMIN
+        image: kylemanna/openvpn
+        container_name: openvpn
+        ports:
+        - "1194:1194/udp"
+        restart: always
+        volumes:
+        - /root/network/openvpn:/etc/openvpn
